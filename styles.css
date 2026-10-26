@@ -678,7 +678,21 @@ select:focus-visible {
   color: white;
   -webkit-text-stroke: 2px var(--ink-color);
   text-shadow: 7px 7px 0 var(--ink-color);
-  animation: emojiBounce 4s ease-in-out infinite;
+  /* animation: emojiBounce 4s ease-in-out infinite; */
+}
+
+.moment-yellow {
+  box-shadow: 7px 7px 0 var(--theme-color);
+}
+
+.moment-emoji:hover img {
+  transform: scale(1.2)
+}
+
+.moment-emoji img {
+  width: 100%; 
+  height: auto; 
+  transition: all 0.5s ease-in;
 }
 .moment-number {
   position: absolute;
@@ -916,11 +930,15 @@ select:focus-visible {
   padding: 35px;
   border: 3px solid var(--ink-color);
   border-radius: 47% 47% 16px 16px;
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     135deg,
     #ff69ad 0 18px,
     #ff93c3 18px 36px
-  );
+  ); */
+  background: url(./assets/img/neekHeroPFP.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   box-shadow: 10px 10px 0 var(--ink-color);
 }
 .about-art::after {
@@ -953,9 +971,11 @@ select:focus-visible {
   z-index: 1;
 }
 .about-art-copy {
-  position: relative;
+  position: absolute;
+  bottom: 0; 
+  left: 0;
   z-index: 1;
-  font: clamp(3rem, 5vw, 5rem)/0.87 var(--font-heading);
+  font: clamp(3rem, 0.5vw, 5rem)/0.87 var(--font-heading);
   color: white;
   -webkit-text-stroke: 1px var(--ink-color);
   text-shadow: 5px 5px 0 var(--ink-color);

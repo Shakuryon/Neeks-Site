@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (note) note.textContent = "Now playing: " + card.querySelector(".char-name")?.textContent + ".";
       } catch (error) {
         resetCards();
-        if (note) note.textContent = "Sample not available yet — add the approved MP3 file at " + source + ".";
+        if (note) note.textContent = "Sample not available yet for demo! " + source + ".";
       }
     });
   });
